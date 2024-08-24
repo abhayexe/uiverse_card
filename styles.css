@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(150deg,  rgb(74, 72, 83) 9%, rgb(29, 32, 43)  100%);
+
+}
+.card {
+    background-color: #2a2a2a;
+    border-radius: 40px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    background: rgb(45,42,62);
+    background: linear-gradient(150deg, rgb(29, 32, 43) 9%, rgb(45, 43, 53) 100%);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+.title {
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+}
+.views {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.heart-icon {
+    background-color: #ff3b30;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heart-icon::before {
+    content: "\2665";
+    color: #fff;
+    font-size: 18px;
+}
+.graph-container {
+    position: relative;
+    height: 150px;
+}
+.graph-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.graph-line {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.time-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #666;
+    font-size: 12px;
+}
+svg {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 120%;
+    height: 120%;
+    scale: 1;
+}
